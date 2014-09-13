@@ -97,8 +97,9 @@ of multi-axis indexing.
 
 - ``.ix`` supports mixed integer and label based access. It is primarily label
   based, but will fall back to integer positional access. ``.ix`` is the most
-  general and will support any of the inputs to ``.loc`` and ``.iloc``, as well
-  as support for floating point label schemes. ``.ix`` is especially useful
+  general and will support any of the inputs to ``.loc`` and ``.iloc`` unless 
+  the DataFrame has an integer index, in which case ``.ix`` will not work. 
+  ``.ix`` also supports floating point label schemes. ``.ix`` is very useful
   when dealing with mixed positional and label based hierarchical indexes.
   As using integer slices with ``.ix`` have different behavior depending on
   whether the slice is interpreted as position based or label based, it's
