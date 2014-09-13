@@ -105,7 +105,7 @@ of multi-axis indexing.
   with mixed positional and label based hierarchical indexes.
  
   When the DataFrame has an integer index or integer columns, positional 
-  access is not supported in the corresponding dimention. Thus, in such cases 
+  access is not supported in the corresponding dimension. Thus, in such cases 
   it's usually better to be explicit and use ``.iloc`` or ``.loc``.
 
   See more at :ref:`Advanced Indexing <advanced>`, :ref:`Advanced
